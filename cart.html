@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/g36.png" type="image/png">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    
+    <title>Zalli Fashion | Cart</title>
+</head>
+<body>
+    <!--Page Loader-->
+    <div class="page-loader" id="page-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!--Navigation-->
+    <nav id="top" class="container-fluid navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand my-brand" href="index.html"><h2>Zalli Fashion</h2></a>
+
+            <!--Toggle control-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#targetnav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="container collapse navbar-collapse" id="targetnav">
+            <!--Search-->
+            <form class="navbar-form navbar-right" role="submit">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">
+                    <span class="glyphicon glyphicon-search"></span></button>
+            </form>
+
+            <!--Navlinks-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collections
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Children</a></li>
+                        </ul>
+                    </li> 
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styles
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Trendy</a></li>
+                        <li><a href="#">Summer Styles</a></li>
+                        <li><a href="#">Coporate</a></li>
+                        <li><a href="#">Traditional</a></li>
+                    </ul>
+                </li>  
+                <li class="active"><a href="#greeting">Shopping cart
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                    <sup><span class="badge active">0</span></sup>
+                </a></li> 
+                <li><a href="#">Blog</a></li>
+                <li><a href="#"><button class="btn btn-sm login-btn">
+                    Login <span class="glyphicon glyphicon-log-in"></span>
+                </button></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Greeting-->
+    <section id="greeting" class="container-fluid greet-section shopping-greet">
+        <div class="jumbotron cloak text-center">
+            <h1>Shopping Cart</h1>
+            <h3>Your choice items</h3>
+            <p><i class="text-muted"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a> > <span>Shopping Cart</span></i></p>
+        </div>
+    </section>
+
+    <main id="CartArea" class="container-fluid">
+        <!--Cart Menu-->
+        <section id="Shopitems" class="bg-light m-1  col-sm-8 sub-section">
+            <div class="well well-sm">
+                <h3 class="text-center">Your Cart Items</h3><hr>
+                <div class="empty-message text-muted text-center text-lead">
+                    <h1 class="cart-image"><span class="icon-shopping-cart"></span></h1>
+                    <p>There are no items in your cart</p>
+                    <a href="index.html"><button class="btn btn-md view-button">Start Shopping
+                        <span class="icon-shopping-bag"></span>
+                    </button></a>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section id="Sidebar" class="col-sm-4 m-1">
+            <div class="sidebar panel">
+                <div class="band text-justify bg-dark panel-header">
+                    <h4>Proceed to checkout</h4>
+                </div>
+            </div>
+
+            <div class="panel-body">
+                <p>Total Items: <b id="total-items">0</b></p>
+                <p>Sum Total: <b id="sum-total">0</b></p>
+            </div>
+
+            <div class="panel-footer">
+                <button id="empty-cart" class="btn btn-sm btn-danger text-center">Empty Cart
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
+                <a href="payment.html"><button class="btn btn-sm btn-success">Proceed to Payment
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </button></a>
+            </div>
+
+        </section>
+    </main> 
+
+    <!--Scroll up button-->
+    <a id="gotop" class="go-top">
+        <b><span class="glyphicon glyphicon-chevron-up"></span></b>
+    </a>
+
+    
+    <!--Footer-->
+    <footer class="container-fluid footer panel bg-dark">
+        <div class="panel-body bg-dark row">
+            <!--Contact us-->
+            <div class="col-sm-4">
+                <h3>Contact us <small><span class="glyphicon glyphicon-info-sign"></span></small></h3>
+                <address>
+                    <strong><span class="glyphicon glyphicon-map-marker"></span></strong>
+                     No 123 abc street, XYZ city.<br>
+                    <span class="icon-phone"> </span> 08030000000
+                </address>
+                <address> 
+                    <strong>Emeka Allison</strong><br> 
+                    <a href="mailto:emekaallison4@gmail.com?">emekaallison4@gmail.com</a> 
+                </address>
+                <ul class="social-links">
+                    <li><a class="social-link" href="#"><span class="icon-twitter"></span></a></li>
+                    <li><a class="social-link" href="#"><span class="icon-facebook"></span></a></li>
+                    <li><a class="social-link" href="#"><span class="icon-instagram"></span></a></li>
+                    <li><a class="social-link" href="#"><span class="icon-snapchat-ghost"></span></a></li>
+                </ul>
+            </div>
+            <!--Quicklinks-->
+            <div class="col-sm-4">
+                <h3>Quicklinks <small><span class="glyphicon glyphicon-link"></span></small></h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Styles</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shopping cart</a></li>
+                </ul>
+            </div>
+
+            <!--Extra Info-->
+            <div class="col-sm-4">
+                <h3>Extra Info <small><span class="glyphicon glyphicon-info-sign"></span></small></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
+                    ullam quod. Eius, in? Iusto soluta eos aut blanditiis dolorum, facilis,
+                     modi eligendi nisi aspernatur consequuntur
+                     eaque laborum magnam accusantium perspiciatis?
+                </p>
+            </div>
+        </div>
+
+        <!--Panel Footer-->
+        <div class="panel-footer text-center">
+            <p><img src="img/g23.png"></p>
+            <p>Zalli Fashion &copy; <script>document.write(new Date().getFullYear());</script></p>
+            <p class="text-muted">Designed by <a href="#">Lkandu<sup>TM</sup></a></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

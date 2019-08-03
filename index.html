@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="img/g36.png" type="image/png">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="css/icomoon.css">
+
+    <title>Zalli Fashion</title>
+</head>
+<body>
+    <!--Page Loader-->
+    <div class="page-loader" id="page-loader">
+        <div class="loader"></div>
+    </div>
+    <!--Navigation-->
+    <nav id="top" class="container-fluid navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand my-brand" href="#greeting"><h2>Zalli Fashion</h2></a>
+
+            <!--Toggle control-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#targetnav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="container collapse navbar-collapse" id="targetnav">
+            <form class="navbar-form navbar-right" role="submit">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-sm btn-success">
+                    <span class="glyphicon glyphicon-search"></span></button>
+            </form>
+    
+            <!--Navlinks-->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Collections
+                        <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Children</a></li>
+                        </ul>
+                    </li> 
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Styles
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Trendy</a></li>
+                        <li><a href="#">Summer Styles</a></li>
+                        <li><a href="#">Coporate</a></li>
+                        <li><a href="#">Traditional</a></li>
+                    </ul>
+                </li>  
+                <li><a href="cart.html">Shopping cart
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        <sup><span class="badge">0</span></sup>
+                    </a></li> 
+                <li><a href="#">Blog</a></li>
+                <li><a href="#"><button class="btn btn-sm login-btn">
+                    Login <span class="glyphicon glyphicon-log-in"></span>
+                </button></a></li> 
+            </ul>
+        </div>
+    </nav>
+
+    <!--Greeting-->
+    <section id="greeting" class="container-fluid greet-section">
+        <div class="jumbotron cloak text-center">
+            <h1 class="top-icon"><img src="img/g39.png"></h1>
+            <h1>Zalli Fashion</h1>
+            <h3>Classes and trendy styles</h3>
+            <p ><i>You can take a tour around</i></p>
+        </div>
+    </section>
+
+    <!--Collections for men, women and children-->
+    <section id="collection" class="bg-dark sub-section">
+        <div class="container pack">
+            <h2 class="text-center sec-heading">Collections</h2><hr>
+
+            <div class="row">
+                <!--Mens-->
+                <div class="col-sm-4 inner-pack" id="men">
+                    <h3 class="sec-label">Men</h3>
+                    <div>
+                        <img class="img-responsive collection-image" src="img/man.jpg" alt="man-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+
+                <!--Womens-->
+                <div class="col-sm-4 inner-pack" id="women">
+                    <h3 class="sec-label">Women</h3>
+                    <div>
+                        <img class="img-responsive collection-image" src="img/woman.jpg" alt="woman-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+
+                <!--Children-->
+                <div class="col-sm-4 inner-pack" id="children">
+                    <h3 class="sec-label">Children</h3>
+                    <div>
+                        <img class="img-responsive collection-image" src="img/child.jpg" alt="children-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Styles Trendy Summer Coporate Traditional-->
+    <section id="styles" class="sub-section">
+        <div class="container pack">
+            <h2 class="text-center sec-heading">Styles</h2><hr>
+
+            <div class="row">
+                <!--Trendy div-->
+                <div class="col-sm-6 p-2" id="trendy">
+                    <h3 class="sec-label">Trendy</h3>
+                    <div>
+                        <img class="img-responsive style-photo" src="img/trendy.jpg" alt="trendy-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+
+                <!--Summer-->
+                <div class="col-sm-6" id="summer">
+                    <h3 class="sec-label">Summer Styles</h3>
+                    <div>
+                        <img class="img-responsive style-photo" src="img/summer.jpg" alt="summer-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Coporate-->
+                <div class="col-sm-6" id="coporate">
+                    <h3 class="sec-label">Office Wears</h3>
+                    <div>
+                        <img class="img-responsive style-photo" src="img/corporate.jpg" alt="coporate-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+
+                <!--Traditional-->
+                <div class="col-sm-6" id="traditional">
+                    <h3 class="sec-label">Traditional</h3>
+                    <div>
+                        <img class="img-responsive style-photo" src="img/traditional.jpg" alt="traditional-photo"/>
+                    </div>
+                    <a><button class="btn btn-md view-button">
+                        <span class="glyphicon glyphicon-eye-open"> </span> View collection</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scroll up button-->
+    <a id="gotop" class="go-top">
+        <b><span class="glyphicon glyphicon-chevron-up"></span></b>
+    </a>
+
+
+    <!--Footer-->
+    <footer class="container-fluid footer panel bg-dark">
+        <div class="panel-body bg-dark row">
+            <!--Contact us-->
+            <div class="col-sm-4">
+                <h3>Contact us <small><span class="glyphicon glyphicon-info-sign"></span></small></h3>
+                <address>
+                    <strong><span class="glyphicon glyphicon-map-marker"></span></strong>
+                     No 123 abc street, XYZ city.<br>
+                    <span class="icon-phone"> </span> 08030000000
+                </address>
+                <address> 
+                    <strong>Emeka Allison</strong><br> 
+                    <a href="mailto:emekaallison4@gmail.com?">emekaallison4@gmail.com</a> 
+                </address>
+                <ul class="social-links">
+                    <li><a class="social-link" href="#" title="Twitter"><span class="icon-twitter"></span></a></li>
+                    <li><a class="social-link" href="#" title="Facebook"><span class="icon-facebook"></span></a></li>
+                    <li><a class="social-link" href="#" title="Instagram"><span class="icon-instagram"></span></a></li>
+                    <li><a class="social-link" href="#" title="Snapchat"><span class="icon-snapchat-ghost"></span></a></li>
+                </ul>
+            </div>
+            <!--Quicklinks-->
+            <div class="col-sm-4">
+                <h3>Quicklinks <small><span class="glyphicon glyphicon-link"></span></small></h3>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Styles</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shopping cart</a></li>
+                </ul>
+            </div>
+
+            <!--Extra Info-->
+            <div class="col-sm-4">
+                <h3>Extra Info <small><span class="glyphicon glyphicon-info-sign"></span></small></h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, 
+                    ullam quod. Eius, in? Iusto soluta eos aut blanditiis dolorum, facilis,
+                     modi eligendi nisi aspernatur consequuntur
+                     eaque laborum magnam accusantium perspiciatis?
+                </p>
+            </div>
+        </div>
+
+        <!--Panel Footer-->
+        <div class="panel-footer text-center">
+            <p><img src="img/g23.png"></p>
+            <p>Zalli Fashion &copy; <script>document.write(new Date().getFullYear());</script></p>
+            <p class="text-muted">Designed by <a href="#">Lkandu<sup>TM</sup></a></p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
